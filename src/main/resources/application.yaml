@@ -1,0 +1,15 @@
+spring:
+    application:
+        name: telegram
+        controllers:
+            telegram:
+                base-path: /telegram
+telegram:
+    bot:
+        chat_id: 5043127453
+        token: "8440529033:AAED6z0-9shdo5uQ5hfr22Nzt7Ai7vMLWoo"
+        resource: /bot
+        operations:
+            sendMessage: /sendMessage
+            getUpdates: /getUpdates
+    url: https://api.telegram.org
