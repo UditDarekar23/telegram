@@ -22,4 +22,9 @@ public class TelegramServiceImpl implements TelegramService {
     public String sendMessage(String chatId, String messageText) {
         return telegramFeignClient.sendMessage(StringUtils.isEmpty(chatId) ? DEFAULT_CHAT_ID : chatId, messageText);
     }
+
+    @Override
+    public String processRequest(String chatId, String message) {
+        return "Unimplemented method 'processRequest'";
+    }
 }
